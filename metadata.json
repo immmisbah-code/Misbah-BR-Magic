@@ -1,0 +1,5 @@
+{
+  "name": "BR Magic",
+  "description": "Secure local-first bank reconciliation tool with built-in authentication and automated Excel matching.",
+  "requestFramePermissions": []
+}
