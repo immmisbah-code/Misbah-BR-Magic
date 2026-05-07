@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { motion } from 'motion/react';
-import { CheckCircle2, AlertCircle, RefreshCw, AlertTriangle, Layers } from 'lucide-react';
+import { CheckCircle2, AlertCircle, RefreshCw, AlertTriangle, Layers, LucideIcon } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
 
 interface SummaryItem {
@@ -8,7 +8,7 @@ interface SummaryItem {
   label: string;
   value: number;
   color: string;
-  icon: any;
+  icon: LucideIcon;
 }
 
 interface SummaryCardsProps {

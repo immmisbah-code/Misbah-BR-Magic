@@ -21,11 +21,7 @@ export interface ReconciliationResult {
   };
 }
 
-export const getMatchKey = (amount: number, description: string) => {
-  // Normalize description: first 50 chars, lowercase, remove extra spaces
-  const normalizedDesc = (description || '').toLowerCase().trim().substring(0, 50).replace(/\s+/g, ' ');
-  return `${amount.toFixed(2)}|${normalizedDesc}`;
-};
+// Removed unused getMatchKey
 
 const getCellValue = (row: any, keywords: string[]) => {
   const key = Object.keys(row).find(k => 
@@ -78,7 +74,7 @@ const parseRow = (row: any, index: number): Transaction => {
     date,
     description,
     amount,
-    id: `row-${index}-${Math.random().toString(36).substr(2, 9)}`
+    id: `row-${index}-${Math.random().toString(36).substring(2, 11)}`
   };
 };
 
